@@ -1,15 +1,16 @@
 // Write your code here.
-const Boxes = props => {
-  const {classs} = props
-  const {headerText, description, className} = classs
+import './index.css'
 
+const Cards = props => {
+  const {property} = props
+  const {headerText, description, className} = property
   return (
     <div className={className}>
       <h1>{headerText}</h1>
       <p>{description}</p>
-      <button>show more</button>
+      <button className="buttons">Show More</button>
     </div>
   )
 }
 
-export default Boxes
+export default Cards
