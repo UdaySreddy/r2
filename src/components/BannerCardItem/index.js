@@ -1,15 +1,16 @@
-// Write your code here.
 import './index.css'
 
 const Cards = props => {
   const {property} = props
   const {headerText, description, className} = property
   return (
-    <div className={className}>
+    <li className={className}>
       <h1>{headerText}</h1>
       <p>{description}</p>
-      <button className="buttons">Show More</button>
-    </div>
+      <button className="buttons" type="button">
+        Show More
+      </button>
+    </li>
   )
 }
 
